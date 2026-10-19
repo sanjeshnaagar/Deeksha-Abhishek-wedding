@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#650b19">
-<meta name="description" content="A royal red and gold wedding invitation celebrating Deeksha and Abhishek.">
+<meta name="description" content="Wedding invitation for Deeksha and Abhishek, with Mehendi and Haldi, Sangeet Night, and wedding ceremony details.">
 <title>Deeksha ♥ Abhishek | Wedding Invitation</title>
 <style>
 :root{--wine:#650b19;--deep:#32050d;--red:#8e1525;--gold:#e6c477;--cream:#fff4df;--muted:#f4dfb4}
@@ -95,6 +95,32 @@ footer .names{font-size:1.7rem;color:var(--gold)}
   </div>
 </section>
 
+<section id="pre-wedding">
+  <div class="section-inner">
+    <div class="kicker">Pre-wedding celebrations • मंगल रस्में</div>
+    <h2>Celebrations Before the Big Day</h2>
+    <p>Join us for a day filled with colour, music, laughter, and love.</p>
+    <div class="card">
+      <div class="kicker">🌼 Mehendi &amp; Haldi Ceremony</div>
+      <div class="event-date">16 November 2026</div>
+      <div class="event-time">11:00 AM IST</div>
+      <div class="rule">✦</div>
+      <p class="gold">Shubham Highway Treat &amp; Resort</p>
+      <p>Guna, Madhya Pradesh</p>
+      <a class="btn map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Shubham+Highway+Treat+%26+Resort+Guna+Madhya+Pradesh" target="_blank" rel="noopener">Open Venue in Google Maps ↗</a>
+    </div>
+    <div class="card">
+      <div class="kicker">🎶 Sangeet Night</div>
+      <div class="event-date">16 November 2026</div>
+      <div class="event-time">6:00 PM IST</div>
+      <div class="rule">✦</div>
+      <p class="gold">Shubham Highway Treat &amp; Resort</p>
+      <p>Guna, Madhya Pradesh</p>
+      <a class="btn map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Shubham+Highway+Treat+%26+Resort+Guna+Madhya+Pradesh" target="_blank" rel="noopener">Open Venue in Google Maps ↗</a>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="section-inner">
     <div class="kicker">Save the date • शुभ दिन</div>
@@ -166,7 +192,7 @@ audio.addEventListener('pause',()=>{musicLabel.textContent='Play music';musicBtn
 audio.addEventListener('play',()=>{musicLabel.textContent='Pause music';musicBtn.setAttribute('aria-pressed','true')});
 
 async function shareInvite(){
-  const data={title:'Deeksha & Abhishek — Wedding Invitation',text:'You are warmly invited to the wedding of Deeksha & Abhishek on 17 November 2026 at 8 PM at Shubham Highway Treat & Resort, Guna.',url:location.href};
+  const data={title:'Deeksha & Abhishek — Wedding Invitation',text:'You are warmly invited to celebrate Deeksha & Abhishek! Mehendi & Haldi: 16 November 2026 at 11 AM; Sangeet Night: 16 November 2026 at 6 PM; Wedding: 17 November 2026 at 8 PM. All events at Shubham Highway Treat & Resort, Guna.',url:location.href};
   if(navigator.share){try{await navigator.share(data)}catch(e){}}
   else if(navigator.clipboard && location.protocol==='https:'){try{await navigator.clipboard.writeText(data.text+' '+location.href);alert('Invitation details copied! You can paste them into WhatsApp.')}catch(e){prompt('Copy and share this invitation:',data.text+' '+location.href)}}
   else {prompt('Copy and share this invitation:',data.text+' '+location.href)}
